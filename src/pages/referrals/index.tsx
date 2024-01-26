@@ -55,7 +55,7 @@ export default function ReferralsPage({ referrals }: ReferralsProps): JSX.Elemen
 	}, [prefersDarkColorScheme, theme]);
 
 	return (
-		<Layout.Default seo={{ title: 'nuro ─ referrals' }}>
+		<Layout.Default seo={{ title: 'vipin ─ referrals' }}>
 			<Toaster
 				toastOptions={{
 					position: 'bottom-right',

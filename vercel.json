@@ -1,20 +1,18 @@
 {
 	"$schema": "https://openapi.vercel.sh/vercel.json",
 	"version": 2,
-	"alias": "nuro.dev",
+	"alias": "vipin.vercel.app",
 	"cleanUrls": true,
 	"public": true,
 	"regions": ["lhr1"],
 	"redirects": [
-		{ "source": "/cv", "destination": "https://read.cv/nuro" },
-		{ "source": "/github", "destination": "https://github.com/nurodev" },
-		{ "source": "/linkedin", "destination": "https://www.linkedin.com/in/nurodev" },
+		{ "source": "/github", "destination": "https://github.com/qvipin/" },
+		{ "source": "/linkedin", "destination": "https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg" },
 		{ "source": "/portfolio", "destination": "/projects" },
-		{ "source": "/resume", "destination": "https://read.cv/nuro" },
-		{ "source": "/twitter", "destination": "https://twitter.com/nurodev" },
+		{ "source": "/twitter", "destination": "https://twitter.com/qvipinb" },
 		{
 			"source": "/contact",
-			"destination": "https://twitter.com/direct_messages/create/nurodev"
+			"destination": "https://twitter.com/direct_messages/create/qvipinb"
 		}
 	]
 }

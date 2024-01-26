@@ -1,10 +1,10 @@
 {
 	"private": true,
-	"name": "nuro.dev",
+	"name": "vipin.vercel.app",
 	"version": "2.1.1",
-	"description": "Personal Website for nuro.dev",
-	"repository": "https://github.com/nurodev/nuro.dev.git",
-	"author": "nurodev <me@nuro.dev>",
+	"description": "My personal website (Credits: NuroDev)",
+	"repository": "https://github.com/qvipin/vipinb.xyz",
+	"author": "vipinb <qvipin.dev@gmail.com>",
 	"license": "MIT",
 	"prettier": {
 		"arrowParens": "always",

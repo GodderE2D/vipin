@@ -3,7 +3,7 @@
 		"date": "01-30-2024",
 		"title": "My first cybersecurity certification",
 		"description": "Officially Google Cybersecurity Certified",
-		"icon": "feather:book",
+		"icon": "feather:book"
 	},
 	{
 		"date": "12-16-2023",
@@ -21,8 +21,7 @@
 		"date": "07-17-2023",
 		"title": "First Cybersecurity Bootcamp",
 		"description": "Another key milestone in my cybersecurity journey",
-		"icon": "feather:briefcase",
-	
+		"icon": "feather:briefcase"
 	},
 	{
 		"date": "02-01-2023",

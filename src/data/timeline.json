@@ -6,6 +6,16 @@
 		"icon": "feather:book"
 	},
 	{
+		"date": "01-14-2024",
+		"title": "Became an supervisor @ CyberStudents",
+		"description": "I became an supervisor of the Cyberstudents Academy",
+		"icon": "feather:briefcase",
+		"link": {
+			"text": "Join the CyberStudents Discord server",
+			"url": "https://discord.gg/cyberstudents"
+		}
+	},
+	{
 		"date": "12-16-2023",
 		"title": "1st Place in State for Cyberpatriots",
 		"description": "My first cybersecurity competition win",
@@ -21,7 +31,7 @@
 		"date": "07-17-2023",
 		"title": "First Cybersecurity Bootcamp",
 		"description": "Another key milestone in my cybersecurity journey",
-		"icon": "feather:briefcase"
+		"icon": "feather:book"
 	},
 	{
 		"date": "02-01-2023",

@@ -55,6 +55,14 @@ const staticMenuItems: Array<Array<NavigationItem>> = [
 			href: 'https://github.com/qvipin',
 			external: true,
 		},
+		{
+			type: NavigationItemType.LINK,
+			icon: 'feather:mail',
+			text: 'Email Me',
+			href: 'mailto:qvipin.dev@gmail.com',
+			external: true,
+		},
+		
 	],
 ];
 

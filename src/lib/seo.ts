@@ -18,7 +18,7 @@ export function useSeoProps(
 		openGraph: {
 			title,
 			description,
-			site_name: 'nuro',
+			site_name: 'vipin',
 			url: `https://vipin.vercel.app${router.asPath}`,
 			type: 'website',
 			images: [

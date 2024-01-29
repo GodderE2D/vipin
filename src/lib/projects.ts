@@ -41,7 +41,7 @@ export async function fetchProjects(): Promise<Array<Project> | null> {
 
 	const projects: Array<Project> = json
 		.map((repo) => {
-			if (!repo.topics.includes('portfolio')) return null;
+			if (!repo.topics.includes('project')) return null;
 
 			if (repo.archived) return null;
 

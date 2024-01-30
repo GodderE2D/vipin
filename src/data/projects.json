@@ -1,6 +1,7 @@
 [
-    {
-        "repository": "cyberstudentsacademy/csd-ctf",
-        "description": "🧑‍🎓 CSD CTF, Cyberstudent's own daily ctf challenges created by qvipin"
-    }
+	{
+		"repository": "cyberstudentsacademy/csd-ctf",
+		"description": "🧑‍🎓 CSD CTF, Cyberstudent's own daily ctf challenges created by qvipin",
+		"post": "csd-ctf"
+	}
 ]

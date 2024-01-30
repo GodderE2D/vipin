@@ -1,7 +1,7 @@
 import emojiRegex from 'emoji-regex';
 import { log } from 'next-axiom';
 
-import type { GitHubRepos, Project, ProjectOverride} from '~/types';
+import type { GitHubRepos, Project, ProjectPost } from '~/types';
 
 export async function fetchProjects(): Promise<Array<Project> | null> {
 	const response = await fetch('https://api.github.com/users/qvipin/repos', {
@@ -27,8 +27,8 @@ export async function fetchProjects(): Promise<Array<Project> | null> {
 
 	const json = (await response.json()) as GitHubRepos;
 
-	const { default: rawProjectOverrides } = await import('~/data/projects.json');
-	const projectOverrides = rawProjectOverrides as Array<ProjectOverride>;
+	const { default: rawProjectPosts } = await import('~/data/projects.json');
+	const projectPosts = rawProjectPosts as Array<ProjectPost>;
 
 	const projects: Array<Project> = json
 		.map((repo) => {
@@ -36,37 +36,38 @@ export async function fetchProjects(): Promise<Array<Project> | null> {
 
 			if (repo.archived) return null;
 
-			// Strip the emoji suffix from the repo description
-			const trimmedDescription = repo.description.split(' ');
-			trimmedDescription.shift();
-			const description = trimmedDescription.join(' ');
-
-				// Check if there is a matching details override
-			const projectOverride =
-				projectOverrides.length > 0 &&
-				projectOverrides.find(
-					(override) => override.repository.toLowerCase() === repo.full_name.toLowerCase(),
-				);
-			let description = projectOverride ? projectOverride.description : repo.description;
-
-			if (!description) return null;
-			const [emoji, ...desc] = description.split(' ');
-			description = desc.join(' ');
+			const projectPost = projectPosts.find((post) => post.repository === repo.full_name);
 
 			return {
-				description,
+				description: repo.description.split(' ').slice(1).join(' '), // Remove the leading emoji from the description
 				icon: ((): string => {
 					if (!repo.description) return undefined;
-
 					const char = repo.description.split(' ')[0];
-
 					return emojiRegex().test(char) ? char : undefined;
 				})(),
 				homepage: repo.homepage ?? undefined,
 				name: repo.name,
-				post: repoPost ? `/blog/${repoPost.post}` : undefined,
+				post: projectPost ? `/blog/${projectPost.post}` : undefined,
 				template: false,
 				url: repo.html_url.toLowerCase(),
 			} as Project;
 		})
-		.filter((project) => project !== null)}
+		.filter((project) => project !== null);
+
+	const formattedProjectPosts: Array<Project> = projectPosts
+		.filter((post) => projects.every((p) => p.name !== post.repository.split(' ')[1])) // Filter out projects that are already in the projects array
+		.map((post) => ({
+			...post,
+			description: post.description.split(' ').slice(1).join(' '), // Remove the leading emoji from the description
+			icon: ((): string => {
+				if (!post.description) return undefined;
+				const char = post.description.split(' ')[0];
+				return emojiRegex().test(char) ? char : undefined;
+			})(),
+			name: post.repository.split('/')[1],
+			url: `https://github.com/${post.repository}`,
+			post: post.post ? `/blog/${post.post}` : undefined,
+		}));
+
+	return [...projects, ...formattedProjectPosts];
+}

@@ -116,7 +116,8 @@ export interface Project {
 	url: string;
 }
 
-export interface ProjectOverride {
+export interface ProjectPost {
 	repository: string;
 	description: string;
+	post: string;
 }

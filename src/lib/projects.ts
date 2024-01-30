@@ -1,7 +1,7 @@
 import emojiRegex from 'emoji-regex';
 import { log } from 'next-axiom';
 
-import type { GitHubRepos, Project, ProjectPost} from '~/types';
+import type { GitHubRepos, Project, ProjectOverride} from '~/types';
 
 export async function fetchProjects(): Promise<Array<Project> | null> {
 	const response = await fetch('https://api.github.com/users/qvipin/repos', {

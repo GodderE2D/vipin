@@ -78,4 +78,4 @@ export async function fetchProjects(): Promise<Array<Project> | null> {
 				url: repo.html_url.toLowerCase(),
 			} as Project;
 		})
-		.filter((project) => project !== null);
+		.filter((project) => project !== null)}

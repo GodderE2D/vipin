@@ -9,7 +9,7 @@ date: '2024-01-30'
 
 # 📝 Foreword
 
-This is a more in-depth write-up & creator insight on how to solve the challenge Webhunt. Webhunt was one of the Daily CTF challenges at [Cyberstudent](https://discord.gg/cyberstudents) and my favorite one I made so far. Webhunt was a challenge where 3 parts of the flag were hidden around the website.
+This is a more in-depth write-up & creator insight on how to solve the challenge Webhunt. Webhunt was one of the Daily CTF challenges at [Cyberstudent](https://discord.gg/cyberstudents) and my favorite one I made so far. Webhunt was a challenge where 3 parts of the flag were hidden around the website. Remember, if you want the full solution or a concise writeup, look in the projects tab of my website for a link to it as in this article I cover the general idea on how to solve it.
 
 # 🔍 Step 1 - Site Analysis
 
@@ -19,15 +19,15 @@ Upon opening the [challenge site](https://437095c8-c22d-4b63-bf98-9b34cbcdc2dd-0
 
 # 🕵️‍♂️ Step 2 - Hunting 
 
-We still have 2 parts of the flag left, let's go, people! Now for the next one, the finding the template idea isn't too bad, but really you should look at the page source and look around, and if you look in *customscript.js*, it is right there.
+We still have 2 parts of the flag left, let's go, people! Now for the next one, the finding the template idea isn't too bad, but really you should look at the page source and look around, and if you look in *customscript.js*, it is right there in plaintext.
 
-# 💻 Step 3 - RE 
+# 💻 Step 3 - Simple RE 
 
 Now continuing on how you should always look at the page source, you are gonna find a suspicious link with the URL tinyurl.com/Ilooksuspiciousclickme. When I created that link, I don't even know why I named it that. If I named it something more modest, it would have been harder to find the flag. And when you click on the link, you get this Python script. Now in my repo, I do talk about this concisely if you need a faster answer, but really, even if you cannot code or read it, you still can read it. What I mean by this is if you look at the code, there were 2 ways to get the flag as when I made this I didn't have the skills or intentions to make a difficult RE challenge, but to get the last part of the flag all you needed to do was either take the ASCII values in the top of the script and decode it, or find the number through the equation at the bottom. For the equation, most people didn't solve it, they used ChatGPT which gave them the numbers 69024. (haha funny so intentional)
 
 ![Equation image](/blog/csd-ctfwriteuppics/mathequationthing.png 'Solve the equation lol')
 
-Once you enter the number, you get this base64 string which gives you the flag after decoding it over and over again. See wasn't that easy.
+Once you enter the number, you get this base64 string which gives you the flag after decoding it over and over again as mentioned in my writeup. See wasn't that easy 🤷‍♂️.
 
 # 🎉 Conclusion
 

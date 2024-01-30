@@ -116,6 +116,10 @@ export interface Project {
 	url: string;
 }
 
+export interface ProjectPost {
+	post: string;
+	repository: string;
+}
 export interface ProjectOverride {
 	repository: string;
 	description: string;

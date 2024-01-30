@@ -26,7 +26,7 @@ export default function ProjectsPage({ stringifiedProjects }: ProjectProps): JSX
 	const projects = JSON.parse(stringifiedProjects) as Array<Project>;
 
 	return (
-		<Layout.Default seo={{ title: 'vipin ─ projects' }}>
+		<Layout.Default seo={{ title: 'nuro ─ projects' }}>
 			<div className="my-24 mx-2 sm:mx-6 lg:mb-28 lg:mx-8">
 				<div className="relative max-w-xl mx-auto">
 					<List.Container>
@@ -39,6 +39,17 @@ export default function ProjectsPage({ stringifiedProjects }: ProjectProps): JSX
 								}}>
 								<List.Item
 									actions={[
+										...(project.post
+											? [
+													{
+														type: ListActionType.LINK,
+														external: false,
+														href: project.post,
+														icon: 'feather:edit-3',
+														label: `Blog post about ${project.name}`,
+													} as ListAction,
+											  ]
+											: []),
 										...(project.homepage
 											? [
 													{

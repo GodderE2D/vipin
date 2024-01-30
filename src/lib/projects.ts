@@ -1,50 +1,56 @@
 import emojiRegex from 'emoji-regex';
 import { log } from 'next-axiom';
 
-import type { GitHubRepos, Project, ProjectOverride } from '~/types';
+import type { GitHubRepos, Project, ProjectPost, ProjectOverride} from '~/types';
 
 export async function fetchProjects(): Promise<Array<Project> | null> {
-	const user = 'qvipin';
+	const response = await fetch('https://api.github.com/users/qvipin/repos', {
+		headers: {
+			...(process.env.GITHUB_PAT && {
+				authorization: `token ${process.env.GITHUB_PAT}`,
+			}),
+		},
+	});
+	if (response.status !== 200) {
+		const json = (await response.json()) as {
+			documentation_url: string;
+			message: string;
+		};
 
-	let repos: GitHubRepos = [];
-	let page = 1;
-	while (true) {
-		const response = await fetch(`https://api.github.com/users/${user}/starred?per_page=100&page=${page}`, {
-			headers: {
-				...(process.env.GITHUB_PAT && {
-					authorization: `token ${process.env.GITHUB_PAT}`,
-				}),
-			},
+		console.error({ error: json });
+		log.error('Failed to fetch projects', {
+			error: json,
 		});
 
-		const res = await response.json();
-
-		if (response.status !== 200) {
-			const error = res as {
-				documentation_url: string;
-				message: string;
-			};
-
-			console.error({ error });
-			log.error('Failed to fetch repos', { error });
-
-			return null;
-		}
-
-		if (res.length === 0) break;
-		repos = repos.concat(res as GitHubRepos);
-		page += 1;
+		return null;
 	}
 
+	const json = (await response.json()) as GitHubRepos;
+
+	const { default: rawProjectPosts } = await import('~/data/projects.json');
+	const projectPosts = rawProjectPosts as Array<ProjectPost>;
 	const { default: rawProjectOverrides } = await import('~/data/projects.json');
 	const projectOverrides = rawProjectOverrides as Array<ProjectOverride>;
 
-	const projects: Array<Project> = repos
-		.sort((a, b) => b.stargazers_count - a.stargazers_count)
+	const projects: Array<Project> = json
 		.map((repo) => {
 			if (!repo.topics.includes('project')) return null;
 
-			// Check if there is a matching details override
+			if (repo.archived) return null;
+
+			// Strip the emoji suffix from the repo description
+			const trimmedDescription = repo.description.split(' ');
+			trimmedDescription.shift();
+			const description = trimmedDescription.join(' ');
+
+			// Check if there is a matching blog post to attach
+			const repoPost =
+				projectPosts.length > 0 &&
+				projectPosts.find(
+					(post) => post.repository.toLowerCase() === repo.full_name.toLowerCase(),
+				);
+
+				// Check if there is a matching details override
 			const projectOverride =
 				projectOverrides.length > 0 &&
 				projectOverrides.find(
@@ -55,19 +61,21 @@ export async function fetchProjects(): Promise<Array<Project> | null> {
 			if (!description) return null;
 			const [emoji, ...desc] = description.split(' ');
 			description = desc.join(' ');
-			if (!emojiRegex().test(emoji)) return null;
-			if (repo.owner.login === user && !repo.topics.includes('in-portfolio')) return null;
 
 			return {
 				description,
-				icon: emoji,
+				icon: ((): string => {
+					if (!repo.description) return undefined;
+
+					const char = repo.description.split(' ')[0];
+
+					return emojiRegex().test(char) ? char : undefined;
+				})(),
 				homepage: repo.homepage ?? undefined,
 				name: repo.name,
+				post: repoPost ? `/blog/${repoPost.post}` : undefined,
 				template: false,
-				url: repo.html_url,
+				url: repo.html_url.toLowerCase(),
 			} as Project;
 		})
 		.filter((project) => project !== null);
-
-	return projects;
-}

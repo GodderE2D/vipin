@@ -17,11 +17,11 @@ Upon opening the [challenge site](https://437095c8-c22d-4b63-bf98-9b34cbcdc2dd-0
 
 ![Use your eyes, they exist for a reason](/blog/csd-ctfwriteuppics/usethemeyes.png 'GUYE - Guys use your eyes.')
 
-# 🕵️‍♂️ Step 2 - Hunting (hence the name Webhunt)
+# 🕵️‍♂️ Step 2 - Hunting 
 
 We still have 2 parts of the flag left, let's go, people! Now for the next one, the finding the template idea isn't too bad, but really you should look at the page source and look around, and if you look in *customscript.js*, it is right there.
 
-# 💻 Step 3 - RE (really easy so dw)
+# 💻 Step 3 - RE 
 
 Now continuing on how you should always look at the page source, you are gonna find a suspicious link with the URL tinyurl.com/Ilooksuspiciousclickme. When I created that link, I don't even know why I named it that. If I named it something more modest, it would have been harder to find the flag. And when you click on the link, you get this Python script. Now in my repo, I do talk about this concisely if you need a faster answer, but really, even if you cannot code or read it, you still can read it. What I mean by this is if you look at the code, there were 2 ways to get the flag as when I made this I didn't have the skills or intentions to make a difficult RE challenge, but to get the last part of the flag all you needed to do was either take the ASCII values in the top of the script and decode it, or find the number through the equation at the bottom. For the equation, most people didn't solve it, they used ChatGPT which gave them the numbers 69024. (haha funny so intentional)
 

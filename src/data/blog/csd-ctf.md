@@ -3,7 +3,7 @@ tagline: csd-ctf
 title: Webhunt - A Creator's Insight
 description: How I made & would solve Webhunt
 banner: /public/blog/ctf_bg.jpeg/
-banner_alt: This is the alternative description for the banner image
+banner_alt: Banner for CTF challenges
 date: '2024-01-30'
 ---
 

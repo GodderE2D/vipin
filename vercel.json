@@ -7,7 +7,7 @@
 	"regions": ["lhr1"],
 	"redirects": [
 		{ "source": "/github", "destination": "https://github.com/qvipin/" },
-		{ "source": "/linkedin", "destination": "https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg" },
+		{ "source": "/linkedin", "destination": "https://www.linkedin.com/in/vipin-b-76a8a12b1/" },
 		{ "source": "/portfolio", "destination": "/projects" },
 		{ "source": "/twitter", "destination": "https://twitter.com/qvipinb" },
 		{

@@ -1,7 +1,7 @@
 import emojiRegex from 'emoji-regex';
 import { log } from 'next-axiom';
 
-import type { GitHubRepos, Project, ProjectPost, ProjectOverride} from '~/types';
+import type { GitHubRepos, Project, ProjectPost} from '~/types';
 
 export async function fetchProjects(): Promise<Array<Project> | null> {
 	const response = await fetch('https://api.github.com/users/qvipin/repos', {
@@ -27,8 +27,6 @@ export async function fetchProjects(): Promise<Array<Project> | null> {
 
 	const json = (await response.json()) as GitHubRepos;
 
-	const { default: rawProjectPosts } = await import('~/data/projects.json');
-	const projectPosts = rawProjectPosts as Array<ProjectPost>;
 	const { default: rawProjectOverrides } = await import('~/data/projects.json');
 	const projectOverrides = rawProjectOverrides as Array<ProjectOverride>;
 
@@ -42,13 +40,6 @@ export async function fetchProjects(): Promise<Array<Project> | null> {
 			const trimmedDescription = repo.description.split(' ');
 			trimmedDescription.shift();
 			const description = trimmedDescription.join(' ');
-
-			// Check if there is a matching blog post to attach
-			const repoPost =
-				projectPosts.length > 0 &&
-				projectPosts.find(
-					(post) => post.repository.toLowerCase() === repo.full_name.toLowerCase(),
-				);
 
 				// Check if there is a matching details override
 			const projectOverride =

@@ -14,16 +14,16 @@ export function useSeoProps(
 	return {
 		title,
 		description,
-		canonical: `https://vipinb.vercel.app/${router.asPath}`,
+		canonical: `https://vipinb.xyz/${router.asPath}`,
 		openGraph: {
 			title,
 			description,
 			site_name: 'vipin',
-			url: `https://vipinb.vercel.app${router.asPath}`,
+			url: `https://vipinb.xyz${router.asPath}`,
 			type: 'website',
 			images: [
 				{
-					url: 'https://vipinb.vercel.app/banner.png',
+					url: 'https://vipinb.xyz/banner.png',
 					alt: description,
 					width: 1280,
 					height: 720,

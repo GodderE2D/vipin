@@ -57,6 +57,13 @@ const staticMenuItems: Array<Array<NavigationItem>> = [
 		},
 		{
 			type: NavigationItemType.LINK,
+			icon: 'feather:discord',
+			text: 'Discord',
+			href: 'https://discordapp.com/users/693224764587770038',
+			external: true,
+		},
+		{
+			type: NavigationItemType.LINK,
 			icon: 'feather:mail',
 			text: 'Email Me',
 			href: 'mailto:qvipin.dev@gmail.com',

@@ -57,7 +57,7 @@ const staticMenuItems: Array<Array<NavigationItem>> = [
 		},
 		{
 			type: NavigationItemType.LINK,
-			icon: 'feather:discord',
+			icon: 'feather:message-square',
 			text: 'Discord',
 			href: 'https://discordapp.com/users/693224764587770038',
 			external: true,

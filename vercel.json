@@ -1,7 +1,7 @@
 {
 	"$schema": "https://openapi.vercel.sh/vercel.json",
 	"version": 2,
-	"alias": "vipinb.vercel.app",
+	"alias": "vipinb.xyz",
 	"cleanUrls": true,
 	"public": true,
 	"regions": ["lhr1"],
@@ -10,6 +10,7 @@
 		{ "source": "/linkedin", "destination": "https://www.linkedin.com/in/vipin-b-76a8a12b1/" },
 		{ "source": "/portfolio", "destination": "/projects" },
 		{ "source": "/twitter", "destination": "https://twitter.com/qvipinb" },
+		{ "source": "/discord", "destination": "https://discordapp.com/users/693224764587770038" },
 		{
 			"source": "/contact",
 			"destination": "https://twitter.com/direct_messages/create/qvipinb"

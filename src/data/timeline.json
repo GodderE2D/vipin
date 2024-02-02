@@ -22,21 +22,33 @@
 		}
 	},
 	{
-		"date": "December 2023",
+		"date": "12-16-2023",
 		"title": "1st Place in State for Cyberpatriots",
 		"description": "My first cybersecurity competition win",
 		"icon": "feather:award"
 	},
 	{
-		"date": "July 2023",
+		"date": "08-02-2023",
+		"title": "Started High School",
+		"description": "Started Highschool officially",
+		"icon": "feather:divide-square"
+	},
+	{
+		"date": "07-17-2023",
 		"title": "First Cybersecurity Bootcamp",
 		"description": "Another key milestone in my cybersecurity journey",
 		"icon": "feather:star"
 	},
 	{
-		"date": "February 2023",
+		"date": "02-01-2023",
 		"title": "The Journey Begins...",
 		"description": "I had received my first pen testing tool which started my dive into cybersecurity 🐬",
 		"icon": "feather:tool"
 	},
+	{
+		"date": "09-21-2009",
+		"title": "A random was born!!!",
+		"description": "On this day I was born",
+		"icon": "feather:gift"
+	}
 ]

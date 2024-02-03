@@ -157,4 +157,42 @@ Flag: ```CTFlearn{n7f_l0c4l_570r463_15n7_53cur3_570r463}```
 
 - To start download the zip and install *fcrackzip*. 
 
-# UNFINISHED 
+```bash:terminal
+
+❯ sudo fcrackzip -u -D -p /Users/vipin/tech/CTFs/rockyou.txt -u use-rockyou.zip
+
+
+PASSWORD FOUND!!!!: pw == kdbs0429
+
+``` 
+
+- Just when we thought it was over, there is another ZIP & Wordlist in _use-rockyou.zip_. Lets crack this one!
+
+```bash:terminal
+
+❯ sudo fcrackzip -u -D -p /Users/vipin/Downloads/customlist.txt -u /Users/vipin/Downloads/customlist.zip
+
+
+PASSWORD FOUND!!!!: pw == 1N73rD3N0M1N4710N41
+
+```
+- And another one 😫.
+
+```bash:terminal
+
+❯ sudo fcrackzip -u -D -p /Users/vipin/Downloads/rockyou.txt -u /Users/vipin/Downloads/brute-force-pin.zip
+sh: -c: line 0: unexpected EOF while looking for matching ``'
+sh: -c: line 1: syntax error: unexpected end of file
+^C^C
+
+PASSWORD FOUND!!!!: pw == 991337
+
+```
+
+- And finally we see the beloved *flag.txt* 😮‍💨.
+
+Flag: ```CTFlearn{s0_n0W_y0uv3_M3t_J0hN}```
+
+# Final Note
+
+This is only the first part of all the CTFlearn writeup's. Next writeup will cover more REV & Binary challenges, so be on the lookout 👀.

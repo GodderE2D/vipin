@@ -4,7 +4,7 @@ title: CTFLearn Writeup Pt. 1
 description: Nearly all the CTFlearn Challenge solutions
 banner: /blog/ctflearn1bg.png/
 banner_alt: Banner for CTF challenges
-date: '2024-02-1'
+date: '2024-02-2'
 ---
 
 # Author's note

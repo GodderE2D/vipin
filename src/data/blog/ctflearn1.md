@@ -141,7 +141,7 @@ Flag: ```CTFlearn{Gandalf}```
 
 ## My Blog
 
-- I enjoyed this challenge very much, if you are having trouble try looking at the bold works **application** & __Memory__. 
+- I enjoyed this challenge very much, if you are having trouble try looking at the bold words **application** & __Memory__. 
 
 - To solve this I instantly went to the application tab in inspect element where nothing seemed to appear on the main landing page in local storage, however when I went to the blog page I found the flag.
 
@@ -153,7 +153,7 @@ Flag: ```CTFlearn{n7f_l0c4l_570r463_15n7_53cur3_570r463}```
 
 ## My Friend John
 
-- Before you start this challenge *john* is a foe not a friend, just use *fcrackzip*. 
+- Before you start this challenge, *john* is a foe not a friend, just use *fcrackzip*. 
 
 - To start download the zip and install *fcrackzip*. 
 

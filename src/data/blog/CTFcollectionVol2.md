@@ -324,13 +324,13 @@ curl -A "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_2 like Mac OS X) AppleWebKit/60
 
 ![Image showing me getting the flag from cyberchef](/blog/ctfcollectionvol2pics/easteregg12.png 'Fig.14')
 
-# 🍔 Easter 13
+## 🍔 Easter 13
 
 - Back in Easter 3 I accidentally found this flag in */ready*
 
 ![Image showing me accidentally getting the flag](/blog/ctfcollectionvol2pics/easteregg13.png 'Fig.15')
 
-# 🌭 Easter 14
+## 🌭 Easter 14
 
 - In the homepage source, there is a base 64 string.
 

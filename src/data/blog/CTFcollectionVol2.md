@@ -332,7 +332,7 @@ curl -A "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_2 like Mac OS X) AppleWebKit/60
 
 # 🌭 Easter 14
 
-- In the homepage source there is a base 64 string
+- In the homepage source, there is a base 64 string.
 
 ![Image showing me finding a BASE64 string](/blog/ctfcollectionvol2pics/easteregg14string.png 'Fig.16')
 

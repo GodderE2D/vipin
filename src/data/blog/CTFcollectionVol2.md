@@ -426,7 +426,7 @@ a   b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z
 
 ## 🥪 Easter 19
 
-- Back in Easter 3 I found the flag accidentally in */small*
+- Back in Easter 3, I found the flag accidentally in */small*
 
 ## 🗿 Easter 20
 
@@ -436,7 +436,7 @@ a   b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z
 
 ```curl -X POST -d "username=DesKel&password=heIsDumb&submit=submit" http://10.10.166.61/```
 
-![Image showing me getting the flag](/blog/ctfcollectionvol2pics/easteregg.png 'Fig.21')
+![Image showing me getting the flag](/blog/ctfcollectionvol2pics/easteregg20.png 'Fig.21')
 
 
 # 💭 Final Thoughts

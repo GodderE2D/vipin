@@ -4,7 +4,7 @@ title: Bizness - My First HTB machine
 description: My first HTB Machine and how I solved it
 banner: /blog/biznessbanner.jpeg/
 banner_alt: Banner of HTB
-date: '2024-02-04'
+date: '2024-02-11'
 ---
 
 ## Starting up 🚀

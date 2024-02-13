@@ -191,12 +191,3 @@ with open(wordlist, 'r', encoding='latin-1') as password_list:
 - And Voila!!!
 
 ![Image showing that i pwned it](/blog/biznesspics/biznesspwned.png 'Fig.6')
-
-
-
-
-
-
-
-
-

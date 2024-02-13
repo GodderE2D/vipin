@@ -24,7 +24,7 @@ export default function Error(): JSX.Element {
 							<br />
 							The page you&apos;re looking for couldn&apos;t be found.
 							<br />
-							(and no, there isn&apos;t a flag here go away)
+							(And no, there isn&apos;t a flag here. Go away lol) 
 						</p>
 						<div className="mt-6 flex justify-center items-center space-x-4">
 							<Button.Standard

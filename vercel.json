@@ -11,6 +11,7 @@
 		{ "source": "/portfolio", "destination": "/projects" },
 		{ "source": "/twitter", "destination": "https://twitter.com/qvipinb" },
 		{ "source": "/discord", "destination": "https://discordapp.com/users/693224764587770038" },
+		{ "source": "/csd", "destination": "https://discord.gg/AuXKbU62WF" },
 		{
 			"source": "/contact",
 			"destination": "https://twitter.com/direct_messages/create/qvipinb"

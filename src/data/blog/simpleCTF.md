@@ -4,7 +4,7 @@ title: Simple CTF | A Simple Writeup
 description: A simple writeup for a simple machine.
 banner: /blog/tryhackmeban2.png/
 banner_alt: Banner of THM (if you find this the flag is csd{8r1N6_84CK_7H3_816_84N6_7H30rY})
-date: '2024-02-18'
+date: '2024-02-19'
 ---
 ## Foreword
 
@@ -102,7 +102,7 @@ $ cat user.txt
 <REDACTED>
 ```
 
-- Looking in the home directory we find another user by the name of sunbath and running ```sudo -l``` we see that we can use vim to spawn a privileged shell (If you want to understand this better check out [this](https://medium.com/schkn/linux-privilege-escalation-using-text-editors-and-files-part-1-a8373396708d) article)
+- Looking in the home directory we find another user by the name of sunbath and running ```sudo -l``` we see that we can use vim to spawn a privileged shell (If you want to understand this better, check out [this](https://medium.com/schkn/linux-privilege-escalation-using-text-editors-and-files-part-1-a8373396708d) article)
 
 ```bash:Terminal
 ❯ sudo vim 

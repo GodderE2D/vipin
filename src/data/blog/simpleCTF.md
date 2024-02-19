@@ -79,7 +79,7 @@ Task Completed
 [+] Password cracked: <REDACTED>
 ```
 
-## Question 6 to 10 + Final Thoughts
+## Questions 6 to 10 + Final Thoughts
 
 - Now we can login through SSH with the username & password
 
@@ -102,7 +102,7 @@ $ cat user.txt
 <REDACTED>
 ```
 
-- Looking in the home directory we find another user by the name of sunbath and running ```sudo -l``` we see that we can use vim to spawn a privileged shell (If you want to understand this better check out [this](https://medium.com/schkn/linux-privilege-escalation-using-text-editors-and-files-part-1-a8373396708d)article)
+- Looking in the home directory we find another user by the name of sunbath and running ```sudo -l``` we see that we can use vim to spawn a privileged shell (If you want to understand this better check out [this](https://medium.com/schkn/linux-privilege-escalation-using-text-editors-and-files-part-1-a8373396708d) article)
 
 ```bash:Terminal
 ❯ sudo vim 
@@ -124,4 +124,4 @@ root@Machine:~# cat root.txt
 root@Machine:~#
 ```
 
-"Voila! Another machine rooted! I had a blast and learnt some new things along the way. I hope you enjoyed this writeup. If you're hungry for more, feel free to check out others [here](https://www.vipinb.xyz/blog)!
+"Voila! Another machine rooted! I had a blast and learnt some new things along the way. I hope you enjoyed this writeup. If you're hungry for more, feel free to check out other writeups [here](https://www.vipinb.xyz/blog)!

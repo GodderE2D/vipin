@@ -6,7 +6,7 @@ banner: /blog/photonlockdown.png/
 banner_alt: A banner showing
 date: '2024-02-26'
 ---
-# Challenge Overview
+## Challenge Overview
 
 Short & Sweet writeup, a "very easy" challenge by HTB. I guess thats all you need to know 🤷🏾‍♂️.
 
@@ -33,7 +33,7 @@ created 0 hardlinks
 ╰─
 ```
 
-# Finding the Flag
+## Finding the Flag
 
 - We will be using the *find* along with the grep command to get the flag.
 
@@ -44,6 +44,6 @@ Binary file /Users/vipin/Downloads/ONT/squashfs-root/bin/tc matches
 Binary file /Users/vipin/Downloads/ONT/squashfs-root/bin/ip matches
 /Users/vipin/Downloads/ONT/squashfs-root/etc/config_default.xml:244:<Value Name="SUSER_PASSWORD" Value="HTB{REDACTED}"/>
 ```
-# [Another challenge solved!](https://www.hackthebox.com/achievement/challenge/1573144/548)
+## Another challenge solved!
 
-![Image showing the machine has been pwned](/blog/photonlockdownpics/pwnedphoton.png 'Fig.1')
+![Image showing the machine has been pwned](/blog/photonlockdownpics/pwnedphoton.png 'https://www.hackthebox.com/achievement/challenge/1573144/548')

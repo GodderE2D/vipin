@@ -1,4 +1,4 @@
-```tux
+```csd{gu3$s_y0U_F0unD_m3}
 
                          4MMMMMMMMMMMML
                        4MMMMMMMMMMMMMMMML

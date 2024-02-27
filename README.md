@@ -1,3 +1,4 @@
+```tux
 
                          4MMMMMMMMMMMML
                        4MMMMMMMMMMMMMMMML
@@ -37,3 +38,4 @@
   """"                "MMMMMMMMMMMMMMMMMM"           """"
       """"""""       MMMMM               "        ""
               """"""""                      """""""
+```

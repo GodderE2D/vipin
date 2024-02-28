@@ -44,6 +44,9 @@ Binary file /Users/vipin/Downloads/ONT/squashfs-root/bin/tc matches
 Binary file /Users/vipin/Downloads/ONT/squashfs-root/bin/ip matches
 /Users/vipin/Downloads/ONT/squashfs-root/etc/config_default.xml:244:<Value Name="SUSER_PASSWORD" Value="HTB{REDACTED}"/>
 ```
+
+- The command above first finds files and then grep's for "HTB" to get the flag.
+  
 ## Another challenge solved!
 
 [![Image showing the machine has been pwned](/blog/photonlockdownpics/pwnedphoton.png)](https://www.hackthebox.com/achievement/challenge/1573144/548)

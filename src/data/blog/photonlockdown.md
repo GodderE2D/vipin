@@ -46,4 +46,4 @@ Binary file /Users/vipin/Downloads/ONT/squashfs-root/bin/ip matches
 ```
 ## Another challenge solved!
 
-![Image showing the machine has been pwned](/blog/photonlockdownpics/pwnedphoton.png 'https://www.hackthebox.com/achievement/challenge/1573144/548')
+![Image showing the machine has been pwned](/blog/photonlockdownpics/pwnedphoton.png)(https://www.hackthebox.com/achievement/challenge/1573144/548)

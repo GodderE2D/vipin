@@ -94,4 +94,4 @@ THM{XXXXXXXXXXXXXXXXXXX}
 
 Hope you enjoyed this writeup, I enjoyed it very much and found the [Python File read exploit]((https://gtfobins.github.io/gtfobins/python/#file-read)) very interesting. Feel free to check out more @ other writeups [here](https://www.vipinb.xyz/blog)!
 
-![My Tryhackme badge](https://tryhackme-badges.s3.amazonaws.com/vipin.b.png)
+![My Tryhackme badge yuh](https://tryhackme-badges.s3.amazonaws.com/vipin.b.png)

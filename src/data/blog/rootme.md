@@ -57,6 +57,8 @@ Nmap done: 1 IP address (1 host up) scanned in 11.29 seconds
 
 ![Image showing the upload panel angry at me](/blog/rootmepics/phpuploaddenied.png 'Fig.3')
 
+- Man, the thing is angry at me ☹️
+
 - My next attempt was a .phtml and it uploaded! Make sure to go to */uploads* and click on the PHP script to run. AND I HAVE ACCESS!!!!
 
 ```bash:Terminal
@@ -90,5 +92,5 @@ THM{XXXXXXXXXXXXXXXXXXX}
 
 ## Closure
 
-Hope you enjoyed this writeup, I enjoyed it very much and found the [Python File read exploit]((https://gtfobins.github.io/gtfobins/python/#file-read)) fun. Feel free to check out more @ other writeups [here](https://www.vipinb.xyz/blog)! 
+Hope you enjoyed this writeup, I enjoyed it very much and found the [Python File read exploit]((https://gtfobins.github.io/gtfobins/python/#file-read)) very interesting. Feel free to check out more @ other writeups [here](https://www.vipinb.xyz/blog)! 
 

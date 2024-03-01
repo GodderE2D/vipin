@@ -19,11 +19,11 @@ date: '2024-02-29'
 
 ![Image showing the email in the pgp key](/blog/sakuraroompics/email.png 'Fig.2')
 
-- I found the full name on [linkedin](https://www.linkedin.com/in/aiko-abe-84a65b125/) whenvI was looking for more results from her username
+- I found the full name on [linkedin](https://www.linkedin.com/in/aiko-abe-84a65b125/) when I was looking for more results from her username
 
 ## UNVEIL
 
-- Most of these questions are about cryptocurrency and we can find 6 repos in her github for crypto and in one of them we find [this](https://github.com/sakurasnowangelaiko/ETH)
+- Most of these questions are about cryptocurrency and we can find 6 repos in her github for cryptocurrency related things and in one of them we find [this](https://github.com/sakurasnowangelaiko/ETH)
 
 ![Image showing the crypto deets in the eth repo](/blog/sakuraroompics/miningscript.png 'Fig.3')
 

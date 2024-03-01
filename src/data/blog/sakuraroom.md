@@ -43,7 +43,7 @@ date: '2024-02-29'
 
 - All we have to do is enter the MD5 Hash from Twitter and we get WIFI information
 
-- Lastly, we need to search for the BSSID on wigle.net, a site that I rant endlessly about for how **shitty** (pardon my language) it is. I like how there is a database for this, but it is very poorly built, and without the help of @ElizabethNoir on Discord, I couldn't have answered it.
+- Lastly, we need to search for the BSSID on wigle.net, a site that I could rant endlessly about for how **shitty** (pardon my language) it is. I like how there is a database for this, but it is very poorly built, and without the help of @ElizabethNoir on Discord, I couldn't have answered it.
 
 ## HOMEBOUND
 

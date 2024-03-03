@@ -1,5 +1,5 @@
 ---
-tagline: rootme
+tagline: sakuraroom
 title: Sakura Room | OSINT
 description: A THM OSINT room 
 banner: /blog/SakuraRoomBanner.jpg/

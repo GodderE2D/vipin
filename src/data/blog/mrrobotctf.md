@@ -100,7 +100,7 @@ Task Completed
 
 ## Key 2
 
-- When we look in */license*, we find the string "ZWxsaW90OkVSMjgtMDY1Mgo=" which seems to be base64
+- When we look in */license*, we find the string "ZWxsaW90OkVSMjgtMDY1Mgo=" which seems to be base64 (A type of encoding)
 
 ![Image showing the output](/blog/mrrobotctf/base64output.png 'Fig.3')
 
@@ -110,7 +110,7 @@ Task Completed
 
 - And we are in! Lets exploit it.
 
-- I started by using the same reverse shell script I used in [RootMe](https://www.vipinb.xyz/blog/rootme#obtaining-the-user-flag) and editing a random theme file with the php code and I got user access!
+- I started by using the same reverse shell PHP script I used in [RootMe](https://www.vipinb.xyz/blog/rootme#obtaining-the-user-flag) and editing the 404 theme file with the php code and I got user access!
 
 ```bash:Terminal
 daemon@linux:/$ python -c 'import pty; pty.spawn("/bin/bash")'
@@ -137,11 +137,11 @@ su robot
 Password: abcdefghijklmnopqrstuvwxyz             
 ```
 
-- And I did get the flag!
+- And I did get the key!
 
 ## Key 3
 
-- I ran ```find / -user root -perm -4000 -exec ls -ldb {} \;``` to see exploitable SUID Binaries and nmap was one. Using GTFOBINS I found that you can run ```nmap --interactive``` and say ```!sh``` to get a shell. 
+- I ran ```find / -user root -perm -4000 -exec ls -ldb {} \;``` to see exploitable SUID Binaries(These are applications that have sudo perms) and NMAP was one. Using GTFOBINS I found that you can run ```nmap --interactive``` and say ```!sh``` to get a shell. 
 
 ```bash:Terminal
 robot@linux:/$ nmap --interactive               

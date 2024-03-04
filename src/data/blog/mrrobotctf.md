@@ -9,7 +9,7 @@ date: '2024-03-3'
 
 ## Foreword
 
-I've come to understand that many people don't grasp my write-ups due to a knowledge gap. Therefore, I'll be explaining every step along the way. Hope you enjoy as I s!
+I've come to understand that many people don't grasp my write-ups due to a knowledge gap. Therefore, I'll be explaining every step along the way. Hope you enjoy as I spend a lot of time on these writeups!
 
 ## Nmap Scan
 

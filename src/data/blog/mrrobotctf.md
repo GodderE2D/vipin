@@ -41,7 +41,7 @@ Nmap done: 1 IP address (1 host up) scanned in 21.96 seconds
 
 ## Dirsearch
 
-_ A Directory Search involves brute-forcing to discover existing directories, helping you understand your attack surface.
+- A Directory Search involves brute-forcing to discover existing directories, helping you understand your attack surface.
 
 ```bash:Terminal
 ──(vipin㉿vipin)-[~]

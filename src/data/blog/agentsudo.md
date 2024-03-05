@@ -1,6 +1,6 @@
 ---
 tagline: agentsudo
-title: Agent Sudo | Concise Writeup
+title: Agent Sudo - Writeup
 description: Mom, I think there are aliens outside...
 banner: /blog/agentsudobanner.jpeg/
 banner_alt: better late than never, better late than never

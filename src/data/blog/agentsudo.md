@@ -204,4 +204,4 @@ DesKel a.k.a Agent R
 
 ### MACHINE PWN'ED 😎
 
-![My Tryhackme badge uh huh](https://tryhackme-badges.s3.amazonaws.com/vipin.b.png)
+![My Tryhackme badge](https://tryhackme-badges.s3.amazonaws.com/vipin.b.png)

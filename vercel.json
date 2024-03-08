@@ -17,7 +17,7 @@
         { "source": "/hey", "destination": "https://drive.google.com/file/d/15NlYxOmV6gRuXHqyzjG7ZBT5OOLyBcXt/view?usp=sharing" },
         { "source": "/config", "destination": "https://drive.google.com/file/d/1vJBRVTpwl-iDSuHG3t6_xqJJ7t2p-eoI/view?usp=sharing" },
         { "source": "/secretplace", "destination": "https://drive.google.com/file/d/1M3jQ5bUKsQg2adFpJ-9YwoC3KrFuSA4Y/view?usp=sharing" },
-        { "source": "/shawn", "destination": "/src/pages/shawn/index.html" },
+        { "source": "/shawn", "destination": "/public/shawn" },
 	{
             "source": "/contact",
             "destination": "https://twitter.com/direct_messages/create/qvipinb"

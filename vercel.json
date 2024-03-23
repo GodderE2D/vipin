@@ -19,6 +19,7 @@
         { "source": "/nogoaway", "destination": "https://drive.google.com/file/d/1vJBRVTpwl-iDSuHG3t6_xqJJ7t2p-eoI/view?usp=sharing" },
         { "source": "/secretplace", "destination": "https://drive.google.com/file/d/1M3jQ5bUKsQg2adFpJ-9YwoC3KrFuSA4Y/view?usp=sharing" },
         { "source": "/csdwriteups", "destination": "https://github.com/cyberstudentsacademy/csd-ctf" },
+	{ "source": "/kali", "destination": "https://www.kali.org/" },
 	{
             "source": "/contact",
             "destination": "https://twitter.com/direct_messages/create/qvipinb"

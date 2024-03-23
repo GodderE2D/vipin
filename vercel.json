@@ -20,7 +20,7 @@
         { "source": "/secretplace", "destination": "https://drive.google.com/file/d/1M3jQ5bUKsQg2adFpJ-9YwoC3KrFuSA4Y/view?usp=sharing" },
         { "source": "/csdwriteups", "destination": "https://github.com/cyberstudentsacademy/csd-ctf" },
 	{ "source": "/kali", "destination": "https://www.kali.org/" }, 
-	{ "source": "/Webinar1", "destination": "https://docs.google.com/presentation/d/14dRue6kTxj5PjiImuhWRV-cMeqXfIcxP1DVTEcWzBJI/edit?usp=sharing" }, 
+	{ "source": "/webinar1", "destination": "https://docs.google.com/presentation/d/14dRue6kTxj5PjiImuhWRV-cMeqXfIcxP1DVTEcWzBJI/edit?usp=sharing" }, 
 	{
             "source": "/contact",
             "destination": "https://twitter.com/direct_messages/create/qvipinb"

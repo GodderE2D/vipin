@@ -11,6 +11,7 @@
         { "source": "/portfolio", "destination": "/projects" },
         { "source": "/twitter", "destination": "https://twitter.com/qvipinb" },
         { "source": "/discord", "destination": "https://discordapp.com/users/693224764587770038" },
+        { "source": "/ctf", "destination": "https://github.com/qvipin/ctf" },
         { "source": "/csd", "destination": "https://discord.gg/cyberstudents-916144903686336513" },
         { "source": "/babes", "destination": "https://drive.google.com/file/d/1Hu6Gk-16B2NolynT-cXpNXWVEWmQzUIj/view?usp=sharing" },
         { "source": "/Y29tbWVudHNlY3JldGxvbA", "destination": "https://discord.com/channels/916144903686336513/916144904172896298/1196268151827087360" },

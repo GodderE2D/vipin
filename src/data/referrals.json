@@ -19,4 +19,14 @@
 		"name": "Cash App",
 		"url": "https://cash.app/app/TW7CQK5"
 	}
+	{
+		"bonus": "Give $5, Get $5",
+		"code": "6573746fa4e3d3f999cd31dd (Use the link)",
+		"color": "#1C2030",
+		"description": "When you sign up for a premium membership within 7 days, we both earn $5 credit towards premium access!",
+		"homepage": "https://tryhackme.com",
+		"icon": "heroicons-outline:flag",
+		"name": "TryHackMe",
+		"url": "https://tryhackme.com/signup?referrer=6573746fa4e3d3f999cd31dd"
+	}
 ]

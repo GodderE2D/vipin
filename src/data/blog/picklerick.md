@@ -94,7 +94,7 @@ Task Completed
 
 ![Image showing it not letting me](/blog/picklerick/commandissue.png 'Fig.7')
 
-- I thing we have to spawn a Reverse Shell (I will be using [revshells.com](https://www.revshells.com/))
+- I think we have to spawn a Reverse Shell (I will be using [revshells.com](https://www.revshells.com/))
 
 ```bash:Panel
 # below is the reverse shell i used

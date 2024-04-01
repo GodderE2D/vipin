@@ -24,6 +24,7 @@
 	{ "source": "/webinar1", "destination": "https://docs.google.com/presentation/d/14dRue6kTxj5PjiImuhWRV-cMeqXfIcxP1DVTEcWzBJI/edit?usp=sharing" },
 	{ "source": "/picoctfdiskchall", "destination": "https://mercury.picoctf.net/static/a734f18939e0aaea9d27bc7a243a0ed0/dds1-alpine.flag.img.gz" },
 	{ "source": "/hi", "destination": "https://www.youtube.com/watch?v=FZUcpVmEHuk" },
+	{ "source": "/picoctf2024", "destination": "https://github.com/qvipin/ctf/blob/main/picoctf/picoctf2024.md" },
 	{
             "source": "/contact",
             "destination": "https://twitter.com/direct_messages/create/qvipinb"

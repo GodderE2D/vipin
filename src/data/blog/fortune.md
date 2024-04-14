@@ -167,7 +167,7 @@ User fortuna may run the following commands on fortune:
 
 - Lets see how we can utilize it to get root, we will be using [gtfobins](https://gtfobins.github.io/gtfobins/pico/) to do this.
 
-![Image showing gtfobin pico](/blog/gtfobinpico.png 'Fig.2')
+![Image showing gtfobin pico](/blog/fortune/gtfobinpico.png 'Fig.2')
 
 - And it worked! (I forgot to take an image of it 😢)
 

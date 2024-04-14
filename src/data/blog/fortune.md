@@ -4,7 +4,7 @@ title: Fortune | KOTH Writeup
 description: A Concise KOTH Writeup.
 banner: /blog/CTF_lg.png/
 banner_alt: we luv u godder
-date: '2024-04-14'
+date: '2024-04-15'
 ---
 
 ## NMAP

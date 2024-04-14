@@ -2,14 +2,14 @@
 tagline: carnage
 title: Carnage | KOTH Experience
 description: KOTH with GodderE2D
-banner: /blog/kothbanner2.png/
+banner: /blog/kothbanner2.jpg/
 banner_alt: i <3 goddere2d
 date: '2024-04-14'
 ---
 
 ## Foreword
 
-I competed against [GodderE2D](godder.xyz) for this KOTH. This is my second KOTH ever, if you want to read about my first KOTH (Space Jam), click [here](https://www.vipinb.xyz/blog/spacejam). Anyways hope you enjoy this writeup!
+I competed against [GodderE2D](https://www.godder.xyz) for this KOTH. This is my second KOTH ever, if you want to read about my first KOTH (Space Jam), click [here](https://www.vipinb.xyz/blog/spacejam). Anyways hope you enjoy this writeup!
 
 ## NMAP Scan
 
@@ -87,7 +87,7 @@ Task Completed
 
 - Finding SUID Binaries was difficult as the *find* command was disabled.
 
-- I didn't get root and Godder did manage to find a second flag on port 82 in /flag.txt. And that was worth a lot more than the user flag. Godder ended up winning, so congrats to him! I think if I wasn't stuck on getting root I would have won, other than that thats it! 
+- I didn't get root and Godder did manage to find a second flag on port 82 in */flag.txt*. And that was worth a lot more than the user flag. Godder ended up winning, so congrats to him! I think if I wasn't stuck on getting root I would have won, other than that thats it! 
 
 ### MACHINE NOT PWN'ED 😔
 
